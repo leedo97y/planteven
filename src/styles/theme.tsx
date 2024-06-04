@@ -1,13 +1,14 @@
 import { Theme } from "@emotion/react";
 
 const theme: Theme = {
-  fontSizes: {
+  font: {
     xxs: "12px",
     xs: "13px",
     sm: "14px",
     base: "16px",
     md: "18px",
     lg: "24px",
+    xlg: "32px",
   },
   colors: {
     black: "#000",
@@ -17,7 +18,7 @@ const theme: Theme = {
     mediumGreen: "#0C501E",
     green: "#216E35",
     lightGreen: "#39864D",
-    mistGreen: "#63A775",
+    mistGreen: "#63a775",
 
     // sub yellow green
     darkYellowGreen: "#3C4200",
