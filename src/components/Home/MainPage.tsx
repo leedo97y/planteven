@@ -20,7 +20,7 @@ const Main = () => {
           const today = new Date();
           const day = new Date(item.period[0], item.period[1], item.period[2]);
           const timeGap = today.getTime() - day.getTime();
-          const remainDays = Math.floor(timeGap / (1000 * 60 * 60 * 24));
+          const remainDays = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
 
           return (
             <MainContentSection className={gugi.className} key={index}>
