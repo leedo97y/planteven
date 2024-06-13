@@ -5,16 +5,14 @@ export const MainContainer = styled.main`
   box-sizing: border-box;
   width: 100vw;
   height: 82vh;
+  margin: 0 auto;
   padding-bottom: 20px;
 
-  #sectionLayer {
+  #scrollLayer {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     padding: 20px 25px 20px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
     overflow: hidden;
 
     &:hover {
@@ -33,6 +31,16 @@ export const MainContainer = styled.main`
     &::-webkit-scrollbar-track {
       color: transparent;
     }
+  }
+
+  #sectionLayer {
+    box-sizing: border-box;
+    width: 975px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 `;
 
@@ -63,6 +71,7 @@ export const MainContentSection = styled.div`
     }
 
     #photoDiv {
+      display: block;
       width: 100%;
       height: 85%;
       background-color: #f0f0f0;

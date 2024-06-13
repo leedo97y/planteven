@@ -1,6 +1,6 @@
 export interface PlantList {
   id: number;
-  imgSrc?: string;
+  imgSrc: string;
   name: string;
   detailName: string;
   period: number[];

@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/rhipsalis.png",
     "name": "립살리스 카수타",
     "detailName": "Rhipsalis baccifera",
     "period": [2024, 2, 31],
@@ -15,7 +15,7 @@
   },
   {
     "id": 1,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/grapefruitTree.png",
     "name": "자몽",
     "detailName": "Citrus sinensis × paradisi",
     "period": [2024, 3, 18],
@@ -29,7 +29,7 @@
   },
   {
     "id": 2,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/chlorophytum.png",
     "name": "나비란",
     "detailName": "Chlorophytum Variegatum",
     "period": [2024, 3, 20],
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/mican.png",
     "name": "필로덴드론 미칸",
     "detailName": "Philodendron hederaceum",
     "period": [2024, 3, 25],
@@ -57,7 +57,7 @@
   },
   {
     "id": 4,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/japonica.png",
     "name": "대엽풍란",
     "detailName": "Sedirea japonica",
     "period": [2024, 3, 30],
@@ -72,7 +72,7 @@
 
   {
     "id": 5,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/tortum.png",
     "name": "필로덴드론 토텀",
     "detailName": "Philodendron tortum",
     "period": [2024, 4, 7],
@@ -86,7 +86,7 @@
   },
   {
     "id": 6,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/mangoTree.png",
     "name": "망고",
     "detailName": "Mangifera indica",
     "period": [2024, 4, 12],
@@ -100,7 +100,7 @@
   },
   {
     "id": 7,
-    "imgSrc": "/public/images/testPlant.png",
+    "imgSrc": "/images/myriocladus.png",
     "name": "아스파라거스 미리오클라두스",
     "detailName": "Asparagus myriocladus",
     "period": [2024, 4, 21],
