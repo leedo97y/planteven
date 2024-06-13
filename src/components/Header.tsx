@@ -1,7 +1,7 @@
-import { HeaderContainer, HomeTitle, MenuDiv } from "@/styles/HeaderStyle";
-import { Slackey } from "next/font/google";
+import { HeaderContainer, HomeTitle } from "@/styles/HeaderStyle";
+import { Gugi } from "next/font/google";
 
-const slackey = Slackey({
+const gugi = Gugi({
   subsets: ["latin"],
   weight: "400",
 });
@@ -9,13 +9,11 @@ const slackey = Slackey({
 const Header = () => {
   return (
     <HeaderContainer>
-      <HomeTitle className={slackey.className}>
-        <h1>PLANTEVEN</h1>
+      <HomeTitle className={gugi.className}>
+        <p>
+          내 식<span>물을</span> 소<span>개합니다</span>
+        </p>
       </HomeTitle>
-      <MenuDiv>
-        <h3>menu1</h3>
-        <h3>menu2</h3>
-      </MenuDiv>
     </HeaderContainer>
   );
 };

@@ -2,6 +2,7 @@ import { Theme } from "@emotion/react";
 
 const theme: Theme = {
   font: {
+    xxxs: "10px",
     xxs: "12px",
     xs: "13px",
     sm: "14px",
@@ -11,7 +12,11 @@ const theme: Theme = {
     xlg: "32px",
   },
   colors: {
+    // font, basic color
     black: "#000",
+    darkGray: "#878787",
+    brown: "#7a5c3e",
+    darkBrown: "#634a33",
 
     // main green
     darkGreen: "#00320D",
@@ -36,6 +41,11 @@ const theme: Theme = {
     deepOrange: "#FF8207",
     orange: "#FF9731",
     lightOrange: "#FFBE7E",
+
+    // background color
+    bgYellowGreen: "#f1fae8",
+    bgGreen: "#fafffb",
+    bgGray: "#ebebeb",
   },
 };
 
