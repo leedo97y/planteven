@@ -1,0 +1,115 @@
+[
+  {
+    "id": 0,
+    "imgSrc": "/images/rhipsalis.png",
+    "name": "립살리스 카수타",
+    "detailName": "Rhipsalis baccifera",
+    "period": [2024, 2, 31],
+    "info": {
+      "native": "중남미 및 카리브해",
+      "light": "반양지",
+      "temp": [15, 25],
+      "humidity": [40, 70],
+      "water": 7
+    }
+  },
+  {
+    "id": 1,
+    "imgSrc": "/images/grapefruitTree.png",
+    "name": "자몽",
+    "detailName": "Citrus sinensis × paradisi",
+    "period": [2024, 3, 18],
+    "info": {
+      "native": "서인도 제도 바베이도스",
+      "light": "양지",
+      "temp": [15, 25],
+      "humidity": [40, 70],
+      "water": 7
+    }
+  },
+  {
+    "id": 2,
+    "imgSrc": "/images/chlorophytum.png",
+    "name": "나비란",
+    "detailName": "Chlorophytum Variegatum",
+    "period": [2024, 3, 20],
+    "info": {
+      "native": "남아프리카",
+      "light": "반양지",
+      "temp": [18, 25],
+      "humidity": [40, 70],
+      "water": 7
+    }
+  },
+  {
+    "id": 3,
+    "imgSrc": "/images/mican.png",
+    "name": "필로덴드론 미칸",
+    "detailName": "Philodendron hederaceum",
+    "period": [2024, 3, 25],
+    "info": {
+      "native": "중남미 브라질",
+      "light": "반양지",
+      "temp": [18, 25],
+      "humidity": [40, 70],
+      "water": 6
+    }
+  },
+  {
+    "id": 4,
+    "imgSrc": "/images/japonica.png",
+    "name": "대엽풍란",
+    "detailName": "Sedirea japonica",
+    "period": [2024, 3, 30],
+    "info": {
+      "native": "한국 등 아시아",
+      "light": "반음지",
+      "temp": [20, 25],
+      "humidity": [70, 80],
+      "water": 2
+    }
+  },
+
+  {
+    "id": 5,
+    "imgSrc": "/images/tortum.png",
+    "name": "필로덴드론 토텀",
+    "detailName": "Philodendron tortum",
+    "period": [2024, 4, 7],
+    "info": {
+      "native": "중남미 브라질",
+      "light": "반양지",
+      "temp": [18, 24],
+      "humidity": [40, 70],
+      "water": 7
+    }
+  },
+  {
+    "id": 6,
+    "imgSrc": "/images/mangoTree.png",
+    "name": "망고",
+    "detailName": "Mangifera indica",
+    "period": [2024, 4, 12],
+    "info": {
+      "native": "동남아 및 남아메리카",
+      "light": "양지",
+      "temp": [18, 25],
+      "humidity": [40, 70],
+      "water": 5
+    }
+  },
+  {
+    "id": 7,
+    "imgSrc": "/images/myriocladus.png",
+    "name": "아스파라거스 미리오클라두스",
+    "detailName": "Asparagus myriocladus",
+    "period": [2024, 4, 21],
+    "info": {
+      "native": "동남아 및 남아메리카",
+      "light": "반음지",
+      "temp": [18, 25],
+      "humidity": [40, 70],
+      "water": 7
+    }
+  }
+]
