@@ -1,17 +1,7 @@
-import Header from "@/components/Header";
-import SideMenu from "@/components/SideMenu";
-import Main from "@/components/Home/Main";
-import { MainContainer } from "@/styles/HomeStyle";
+import Main from "@/components/Home/MainPage";
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <MainContainer>
-        <SideMenu />
-        <Main />
-      </MainContainer>
-      <footer></footer>
-    </>
-  );
-}
+const Home = () => {
+  return <Main />;
+};
+
+export default Home;
