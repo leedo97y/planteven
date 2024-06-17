@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import Layout from "@/components/Layout";
 import GlobalStyle from "@/styles/GlobalStyle";
 import { ThemeProvider } from "@emotion/react";

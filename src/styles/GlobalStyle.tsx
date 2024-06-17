@@ -1,6 +1,11 @@
 import { Global, css } from "@emotion/react";
 
 const style = css`
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/fonts/PretendardVariable.woff2") format("truetype");
+  }
+
   html {
     width: 100vw;
     height: 100vh;
