@@ -19,7 +19,7 @@ const Main = () => {
         <div id="sectionLayer">
           {data.map((item, index) => {
             const today = new Date();
-            const day = new Date(item.period[0], item.period[1], item.period[2]);
+            const day = new Date(item.onDate[0], item.onDate[1], item.onDate[2]);
             const timeGap = today.getTime() - day.getTime();
             const remainDays = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
 

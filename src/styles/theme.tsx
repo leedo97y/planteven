@@ -14,7 +14,7 @@ const theme: Theme = {
   },
   colors: {
     // font, basic color
-    black: "#000",
+    black: "#292929",
     darkGray: "#878787",
     brown: "#7a5c3e",
     darkBrown: "#634a33",
@@ -36,7 +36,15 @@ const theme: Theme = {
     deepBlue: "#0A9BBD",
     mediumBlue: "#2DB2D1",
     blue: "#50C5E0",
-    lightBlue: "#78D6EC",
+    lightBlue: "#b6ecf8",
+
+    // caution
+    deepRed: "#b13a22",
+    red: "#FF5733",
+    lightRed: "#fa9983",
+    deepNavy: "#1a1b85",
+    navy: "#2B2DD7",
+    lightNavy: "#898bf1",
 
     // sun orange
     deepOrange: "#FF8207",

@@ -4,7 +4,7 @@
     "imgSrc": "/images/rhipsalis.png",
     "name": "립살리스 카수타",
     "detailName": "Rhipsalis baccifera",
-    "period": [2024, 2, 31],
+    "onDate": [2024, 2, 31],
     "info": {
       "native": "중남미 및 카리브해",
       "light": "반양지",
@@ -12,6 +12,7 @@
       "humidity": [40, 70],
       "watering": [7, 10],
       "repotting": ["2024-04-05"],
+      "fertilizer": "HIGH",
       "desc": ["쪼글해지면 물주기"]
     }
   },
@@ -20,7 +21,7 @@
     "imgSrc": "/images/grapefruitTree.png",
     "name": "자몽",
     "detailName": "Citrus sinensis × paradisi",
-    "period": [2024, 3, 18],
+    "onDate": [2024, 3, 18],
     "info": {
       "native": "서인도 제도 바베이도스",
       "light": "양지",
@@ -28,6 +29,7 @@
       "humidity": [40, 70],
       "watering": [5, 7],
       "repotting": ["2024-05-07"],
+      "fertilizer": "HIGH",
       "desc": ["잔뿌리가 잘 안 나고 있음"]
     }
   },
@@ -36,7 +38,7 @@
     "imgSrc": "/images/chlorophytum.png",
     "name": "나비란",
     "detailName": "Chlorophytum Variegatum",
-    "period": [2024, 3, 20],
+    "onDate": [2024, 3, 20],
     "info": {
       "native": "남아프리카",
       "light": "반양지",
@@ -44,6 +46,7 @@
       "humidity": [40, 70],
       "watering": [7, 10],
       "repotting": ["2024-04-20"],
+      "fertilizer": "MEDIUM",
       "desc": ["자구가 달렸을땐 물 마르는지 자주 체크"]
     }
   },
@@ -52,14 +55,15 @@
     "imgSrc": "/images/mican.png",
     "name": "필로덴드론 미칸",
     "detailName": "Philodendron hederaceum",
-    "period": [2024, 3, 25],
+    "onDate": [2024, 3, 25],
     "info": {
       "native": "중남미 브라질",
       "light": "반양지",
       "temp": [18, 25],
       "humidity": [40, 70],
-      "watering": [5, 7],
+      "watering": [5, 10],
       "repotting": ["2024-05-19", "2024-05-19", "2024-06-17"],
+      "fertilizer": "HIGH",
       "desc": ["봉 태우면 잎이 커짐", "물주기 큰 미칸 7일, 작은 미칸들 5일", "분갈이 대-중-소 순"]
     }
   },
@@ -68,7 +72,7 @@
     "imgSrc": "/images/japonica.png",
     "name": "대엽풍란",
     "detailName": "Sedirea japonica",
-    "period": [2024, 3, 30],
+    "onDate": [2024, 3, 30],
     "info": {
       "native": "한국 등 아시아",
       "light": "반음지",
@@ -76,6 +80,7 @@
       "humidity": [70, 80],
       "watering": [2, 3],
       "repotting": [""],
+      "fertilizer": "MEDIUM",
       "desc": ["목부작이라 물 2일에 한번 줌"]
     }
   },
@@ -85,14 +90,15 @@
     "imgSrc": "/images/tortum.png",
     "name": "필로덴드론 토텀",
     "detailName": "Philodendron tortum",
-    "period": [2024, 4, 7],
+    "onDate": [2024, 4, 7],
     "info": {
       "native": "중남미 브라질",
       "light": "반양지",
       "temp": [18, 24],
       "humidity": [40, 70],
-      "watering": [4, 7],
+      "watering": [4, 10],
       "repotting": ["2024-05-30", "2024-06-06"],
+      "fertilizer": "HIGH",
       "desc": ["5월 토텀 4일에 한번 물주기", "6월 토텀 5-7일에 한번 물주기"]
     }
   },
@@ -101,7 +107,7 @@
     "imgSrc": "/images/mangoTree.png",
     "name": "망고",
     "detailName": "Mangifera indica",
-    "period": [2024, 4, 12],
+    "onDate": [2024, 4, 12],
     "info": {
       "native": "동남아 및 남아메리카",
       "light": "양지",
@@ -109,6 +115,7 @@
       "humidity": [40, 70],
       "watering": [5, 7],
       "repotting": ["2024-05-12"],
+      "fertilizer": "HIGH",
       "desc": ["분갈이 다가오는 중"]
     }
   },
@@ -117,7 +124,7 @@
     "imgSrc": "/images/myriocladus.png",
     "name": "아스파라거스 미리오클라두스",
     "detailName": "Asparagus myriocladus",
-    "period": [2024, 4, 21],
+    "onDate": [2024, 4, 21],
     "info": {
       "native": "동남아 및 남아메리카",
       "light": "반음지",
@@ -125,6 +132,7 @@
       "humidity": [40, 70],
       "watering": [7, 10],
       "repotting": ["2024-05-21"],
+      "fertilizer": "MEDIUM",
       "desc": ["들여올 때 이미 분갈이 된 상태였음"]
     }
   }

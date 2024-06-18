@@ -2,6 +2,7 @@ import { Gugi } from "next/font/google";
 import { DetailMainDiv, InfoSection } from "@/styles/DetailPageStyle";
 import { PlantList } from "@/types";
 import Image from "next/image";
+import Label from "./Label";
 
 const gugi = Gugi({
   subsets: ["latin"],
@@ -15,7 +16,11 @@ const DetailMainInfo = (props: PlantList) => {
         <div id="plantNumber"># {props.id + 1}</div>
         <h1>{props.name}</h1>
         <p id="detailName">{props.detailName}</p>
-        <div id="plantLabel">label</div>
+        <Label
+          light={props.info?.light}
+          watering={props.info?.watering}
+          fertilizer={props.info?.fertilizer}
+        />
       </div>
       <InfoSection>
         {props.imgSrc && (
@@ -44,13 +49,13 @@ const DetailMainInfo = (props: PlantList) => {
           <div id="textDiv">
             <p id="tempTitle">온도</p>
             <p id="temp">
-              {props.info?.temp[0]} - {props.info?.temp[1]}
+              {props.info?.temp[0]} - {props.info?.temp[1]} ℃
             </p>
           </div>
           <div id="textDiv">
             <p id="humidityTitle">습도</p>
             <p id="humidity">
-              {props.info?.humidity[0]} - {props.info?.humidity[1]}
+              {props.info?.humidity[0]} - {props.info?.humidity[1]} %
             </p>
           </div>
           <div id="textDiv">
