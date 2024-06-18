@@ -11,6 +11,7 @@ declare module "@emotion/react" {
       md: string;
       lg: string;
       xlg: string;
+      xxlg: string;
     };
     colors: {
       // font, basic color

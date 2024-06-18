@@ -9,7 +9,8 @@ const theme: Theme = {
     base: "16px",
     md: "18px",
     lg: "24px",
-    xlg: "32px",
+    xlg: "28px",
+    xxlg: "32px",
   },
   colors: {
     // font, basic color

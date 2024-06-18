@@ -9,6 +9,8 @@ export interface PlantList {
     light: string;
     temp: number[];
     humidity: number[];
-    water: number;
+    repotting: string[];
+    watering: number[];
+    desc: string[];
   };
 }
