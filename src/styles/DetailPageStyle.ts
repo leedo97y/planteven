@@ -42,12 +42,6 @@ export const DetailMainDiv = styled.div`
     #detailName {
       font-size: ${({ theme }) => theme.font.xs};
     }
-
-    #plantLabel {
-      font-family: "Pretendard";
-      margin-top: 10px;
-      font-size: ${({ theme }) => theme.font.sm};
-    }
   }
 `;
 
