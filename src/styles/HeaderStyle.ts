@@ -16,10 +16,11 @@ export const HomeTitle = styled.div`
   margin: 20px 0 10px 0;
   padding-left: 20px;
 
-  p {
+  a {
+    text-decoration: none;
     width: fit-content;
     margin: 0;
-    font-size: ${({ theme }) => theme.font.xlg};
+    font-size: ${({ theme }) => theme.font.xxlg};
     color: ${({ theme }) => theme.colors.darkGreen};
 
     span {

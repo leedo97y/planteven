@@ -11,6 +11,7 @@ declare module "@emotion/react" {
       md: string;
       lg: string;
       xlg: string;
+      xxlg: string;
     };
     colors: {
       // font, basic color
@@ -37,6 +38,14 @@ declare module "@emotion/react" {
       mediumBlue: string;
       blue: string;
       lightBlue: string;
+
+      // caution
+      deepRed: string;
+      red: string;
+      lightRed: string;
+      deepNavy: string;
+      navy: string;
+      lightNavy: string;
 
       // sun orange
       deepOrange: string;
