@@ -6,7 +6,7 @@ export const DetailContainer = styled.main`
   width: 100vw;
   height: 82vh;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   display: flex;
   flex-direction: row;
   font-family: "Pretendard";
@@ -23,11 +23,11 @@ export const DetailMainDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 
     #plantNumber {
       font-family: "Pretendard";
-      font-size: ${({ theme }) => theme.font.lg};
+      font-size: ${({ theme }) => theme.font.md};
     }
 
     h1,
@@ -46,16 +46,18 @@ export const DetailMainDiv = styled.div`
 `;
 
 export const InfoSection = styled.div`
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 4fr 6fr;
+  display: flex;
+  flex-direction: row;
   gap: 30px;
 
   #photoDiv {
+    box-sizing: border-box;
     position: relative;
     display: block;
-    width: 100%;
+    width: fit-content;
     height: 100%;
 
     img {
@@ -66,20 +68,20 @@ export const InfoSection = styled.div`
   }
 
   #plantTextInfoDiv {
+    box-sizing: border-box;
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0;
+    padding: 10px 0 0 0;
 
     #textDiv {
+      box-sizing: border-box;
       width: 100%;
-
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      width: 100%;
+      gap: 7px;
 
       p {
         margin: 0;

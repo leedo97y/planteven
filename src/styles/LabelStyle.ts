@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const LabelContainer = styled.div`
   font-family: "Pretendard";
-  margin-top: 10px;
+  margin-top: 7px;
   font-size: ${({ theme }) => theme.font.sm};
   display: flex;
   flex-direction: row;
