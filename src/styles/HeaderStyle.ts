@@ -21,7 +21,7 @@ export const HomeTitle = styled.div`
     width: fit-content;
     margin: 0;
     font-size: ${({ theme }) => theme.font.xxlg};
-    color: ${({ theme }) => theme.colors.darkGreen};
+    color: ${({ theme }) => theme.colors.deepGreen};
 
     span {
       font-size: ${({ theme }) => theme.font.lg};

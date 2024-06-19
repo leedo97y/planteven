@@ -17,7 +17,9 @@ const DetailMainInfo = (props: PlantList) => {
         <h1>{props.name}</h1>
         <p id="detailName">{props.detailName}</p>
         <Label
+          temp={props.info?.temp}
           light={props.info?.light}
+          humidity={props.info?.humidity}
           watering={props.info?.watering}
           fertilizer={props.info?.fertilizer}
         />
