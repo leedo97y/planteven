@@ -16,19 +16,19 @@ declare module "@emotion/react" {
     colors: {
       // font, basic color
       black: string;
-      darkGray: string;
+      deepGray: string;
       brown: string;
-      darkBrown: string;
+      deepBrown: string;
 
       // main green
-      darkGreen: string;
+      deepGreen: string;
       mediumGreen: string;
       green: string;
       lightGreen: string;
       mistGreen: string;
 
       // sub yellow green
-      darkYellowGreen: string;
+      deepYellowGreen: string;
       mediumYellowGreen: string;
       yellowGreen: string;
       mistYellowGreen: string;
@@ -51,6 +51,10 @@ declare module "@emotion/react" {
       deepOrange: string;
       orange: string;
       lightOrange: string;
+
+      // label color
+      labelLightGreen: string;
+      labelLightOrange: string;
 
       // background color
       bgYellowGreen: string;

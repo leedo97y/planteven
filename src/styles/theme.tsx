@@ -15,19 +15,19 @@ const theme: Theme = {
   colors: {
     // font, basic color
     black: "#292929",
-    darkGray: "#878787",
+    deepGray: "#878787",
     brown: "#7a5c3e",
-    darkBrown: "#634a33",
+    deepBrown: "#634a33",
 
     // main green
-    darkGreen: "#00320D",
+    deepGreen: "#00320D",
     mediumGreen: "#0C501E",
     green: "#216E35",
     lightGreen: "#39864D",
     mistGreen: "#63a775",
 
     // sub yellow green
-    darkYellowGreen: "#3C4200",
+    deepYellowGreen: "#3C4200",
     mediumYellowGreen: "#60690F",
     yellowGreen: "#A7B04B",
     mistYellowGreen: "#D2DB82",
@@ -50,6 +50,10 @@ const theme: Theme = {
     deepOrange: "#FF8207",
     orange: "#FF9731",
     lightOrange: "#FFBE7E",
+
+    // label color
+    labelLightGreen: "#d2fad6",
+    labelLightOrange: "#fae9c3",
 
     // background color
     bgYellowGreen: "#f1fae8",
