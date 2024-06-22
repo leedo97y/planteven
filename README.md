@@ -1,40 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🪴 반려식물 관리 웹 Planteven - 내식소
 
-## Getting Started
+<div align="center"><img alt="logoImage" src="./public/images/plantevenLogo.png" width="200px" height="200px" />
+</div>
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+・ 배포 URL : [https://planteven.vercel.app]("https://planteven.vercel.app")
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Planteven - 내식소 소개
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Planteven은 키우고 있는 식물들의 정보를 알기 쉽게 한 곳에 모아 적어둔 페이지입니다.
+- 메인 페이지는 폴라로이드 사진 갤러리처럼 보이도록 구성했으며 간단한 정보들을 알 수 있게 구성했습니다.
+- 상세 페이지는 폴라로이드처럼 보이는 부분을 누르면 진입 가능하며 물주기 등 식물 키우기에 필요한 상세한 정보들을 알 수 있도록 구성했습니다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 개발 환경
 
-## Learn More
+- FE : Next.js, Typescript, emotion.js
+- Deploy : Vercel
+- Design : [Figma]("https://www.figma.com/design/ThSqGsgV3WNA0iMfTwtZZO/Untitled?node-id=7-52&t=l75HWk9W5UhOgHbO-0")
 
-To learn more about Next.js, take a look at the following resources:
+<br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 페이지별 기능
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 메인 페이지
 
-## Deploy on Vercel
+- 폴라로이드 갤러리 처럼 식물 사진을 모아서 보여주고 있습니다.
+- 식물의 이름, 학명, 들여온 날 부터 얼마나 되었는지 등 을 알 수 있습니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| 메인 페이지 |
+|----------|
+| <img alt="logoImage" src="./public/images/mainPage.png"  width="500px" /> |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
+
+### 상세 페이지
+
+- 필요한 빛 조건, 온도, 물주기, 습도 등 추가적인 정보를 보여줍니다.
+- 라벨을 통해 실내 식물로 키우는 난이도, 냉해 유무, 비료 요구도 등 을 간단하게 파악할 수 있습니다.
+
+| 상세 페이지 |
+|----------|
+| <img alt="logoImage" src="./public/images/detail-1.png" width="500px"  /> |
+
+
+<br>
+
+## 개선 사항
+
+- DB 사용
+  - DB를 사용하여 추가, 수정 및 삭제가 가능하도록 구현 예정
+  - 물주기 DB를 사용하여 관련 알림 추가 예정
+- 이미지 변경
+  - 웹 이미지에서 직접 찍은 이미지로 수정 예정
