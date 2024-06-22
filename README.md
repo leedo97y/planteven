@@ -21,7 +21,7 @@
 
 - FE : Next.js, Typescript, emotion.js
 - Deploy : Vercel
-- Design : [!Figma](https://www.figma.com/design/ThSqGsgV3WNA0iMfTwtZZO/Untitled?node-id=7-52&t=l75HWk9W5UhOgHbO-0)
+- Design : [Figma](https://www.figma.com/design/ThSqGsgV3WNA0iMfTwtZZO/Untitled?node-id=7-52&t=l75HWk9W5UhOgHbO-0)
 
 <br>
 
