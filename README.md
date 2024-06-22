@@ -5,7 +5,7 @@
 
 <br>
 
-・ 배포 URL : [https://planteven.vercel.app]("https://planteven.vercel.app")
+・ 배포 URL : [https://planteven.vercel.app](https://planteven.vercel.app)
 
 <br>
 
@@ -21,7 +21,7 @@
 
 - FE : Next.js, Typescript, emotion.js
 - Deploy : Vercel
-- Design : [Figma]("https://www.figma.com/design/ThSqGsgV3WNA0iMfTwtZZO/Untitled?node-id=7-52&t=l75HWk9W5UhOgHbO-0")
+- Design : [!Figma](https://www.figma.com/design/ThSqGsgV3WNA0iMfTwtZZO/Untitled?node-id=7-52&t=l75HWk9W5UhOgHbO-0)
 
 <br>
 
