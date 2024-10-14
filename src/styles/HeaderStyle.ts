@@ -15,16 +15,24 @@ export const HomeTitle = styled.div`
   height: fit-content;
   margin: 20px 0 10px 0;
   padding-left: 20px;
+  font-family: "GabiaHeuldot";
+  font-weight: 700;
 
   a {
     text-decoration: none;
     width: fit-content;
     margin: 0;
-    font-size: ${({ theme }) => theme.font.xxlg};
-    color: ${({ theme }) => theme.colors.deepGreen};
+
+    #title {
+      font-size: ${({ theme }) => theme.font.xlg};
+      color: white;
+      background-color: ${({ theme }) => theme.colors.deepGreen};
+      border-radius: 100%;
+      padding: 6px;
+    }
 
     span {
-      font-size: ${({ theme }) => theme.font.lg};
+      font-size: ${({ theme }) => theme.font.md};
       color: ${({ theme }) => theme.colors.green};
     }
   }

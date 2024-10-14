@@ -46,6 +46,7 @@ export const MainContainer = styled.main`
 
 export const MainContentSection = styled.div`
   rotate: -2deg;
+  font-family: "Pretendard";
 
   &:nth-of-type(2n) {
     rotate: 2deg;
@@ -105,10 +106,15 @@ export const MainContentSection = styled.div`
         }
       }
 
-      #days {
+      #daysDiv {
         height: fit-content;
         padding-right: 10px;
         font-size: ${({ theme }) => theme.font.xs};
+
+        #days {
+          font-weight: 600;
+          color: ${({ theme }) => theme.colors.deepGreen};
+        }
       }
     }
   }

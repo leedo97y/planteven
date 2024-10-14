@@ -1,18 +1,14 @@
 import { HeaderContainer, HomeTitle } from "@/styles/HeaderStyle";
-import { Gugi } from "next/font/google";
 import Link from "next/link";
-
-const gugi = Gugi({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <HomeTitle className={gugi.className}>
+      <HomeTitle>
         <Link href={"/"}>
-          내 식<span>물을</span> 소<span>개합니다</span>
+          <span id="title">내</span> <span id="title">식</span>
+          <span>물을</span> <span id="title">소</span>
+          <span>개합니다</span>
         </Link>
       </HomeTitle>
     </HeaderContainer>

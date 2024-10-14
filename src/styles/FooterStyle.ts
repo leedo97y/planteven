@@ -7,7 +7,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   box-sizing: border-box;
   height: 10vh;
-  background-color: ${({ theme }) => theme.colors.bgYellowGreen};
+  background-color: ${({ theme }) => theme.colors.bgGray};
   padding: 20px;
 
   p {

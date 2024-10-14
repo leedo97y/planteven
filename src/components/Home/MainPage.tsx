@@ -1,14 +1,7 @@
 import { MainContainer, MainContentSection } from "@/styles/HomeStyle";
-import { Gugi } from "next/font/google";
 import Image from "next/image";
-// import plantImg from "/public/images/testPlant.png";
 import Link from "next/link";
 import { PlantList } from "@/types";
-
-const gugi = Gugi({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const Main = () => {
   const data: PlantList[] = require("/public/data/data.json");
@@ -24,7 +17,7 @@ const Main = () => {
             const remainDays = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
 
             return (
-              <MainContentSection className={gugi.className} key={index}>
+              <MainContentSection key={index}>
                 <Link href={`/detail/${item.id}`}>
                   <div id="photoDiv">
                     <Image
@@ -42,7 +35,10 @@ const Main = () => {
                       <p id="name">{item.name}</p>
                       <p id="detailName">{item.detailName}</p>
                     </div>
-                    <span id="days">{remainDays} days</span>
+                    <div id="daysDiv">
+                      <span id="days">{remainDays}</span>
+                      <span> days</span>
+                    </div>
                   </div>
                 </Link>
               </MainContentSection>
