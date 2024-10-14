@@ -18,23 +18,6 @@
   },
   {
     "id": 1,
-    "imgSrc": "/images/grapefruitTree.png",
-    "name": "자몽",
-    "detailName": "Citrus sinensis × paradisi",
-    "onDate": [2024, 3, 18],
-    "info": {
-      "native": "서인도 제도 바베이도스",
-      "light": "양지",
-      "temp": [15, 25],
-      "humidity": [40, 70],
-      "watering": [5, 7],
-      "repotting": ["2024-05-07"],
-      "fertilizer": "HIGH",
-      "desc": ["잔뿌리가 잘 안 나고 있음"]
-    }
-  },
-  {
-    "id": 2,
     "imgSrc": "/images/chlorophytum.png",
     "name": "나비란",
     "detailName": "Chlorophytum Variegatum",
@@ -51,7 +34,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 2,
     "imgSrc": "/images/mican.png",
     "name": "필로덴드론 미칸",
     "detailName": "Philodendron hederaceum",
@@ -64,31 +47,13 @@
       "watering": [5, 10],
       "repotting": ["2024-05-19", "2024-05-19", "2024-06-17"],
       "fertilizer": "HIGH",
-      "desc": ["물주기 큰 미칸 7일, 작은 미칸들 5일"]
+      "desc": ["큰 미칸 7일, 작은 미칸들 5일에 한번 물주기"]
     }
   },
   {
-    "id": 4,
-    "imgSrc": "/images/japonica.png",
-    "name": "대엽풍란",
-    "detailName": "Sedirea japonica",
-    "onDate": [2024, 3, 30],
-    "info": {
-      "native": "한국 등 아시아",
-      "light": "반음지",
-      "temp": [20, 25],
-      "humidity": [70, 80],
-      "watering": [2, 3],
-      "repotting": [""],
-      "fertilizer": "MEDIUM",
-      "desc": ["목부작이라 물 2일에 한번 줌"]
-    }
-  },
-
-  {
-    "id": 5,
-    "imgSrc": "/images/tortum.png",
-    "name": "필로덴드론 토텀",
+    "id": 3,
+    "imgSrc": "/images/tortum1.png",
+    "name": "필로덴드론 토텀 (소)",
     "detailName": "Philodendron tortum",
     "onDate": [2024, 4, 7],
     "info": {
@@ -97,30 +62,13 @@
       "temp": [18, 24],
       "humidity": [40, 70],
       "watering": [4, 10],
-      "repotting": ["2024-05-30", "2024-06-06"],
+      "repotting": ["2024-05-30"],
       "fertilizer": "HIGH",
-      "desc": ["5월 토텀 4일에 한번 물주기", "6월 토텀 5-7일에 한번 물주기"]
+      "desc": ["4일에 한번 물주기"]
     }
   },
   {
-    "id": 6,
-    "imgSrc": "/images/mangoTree.png",
-    "name": "망고",
-    "detailName": "Mangifera indica",
-    "onDate": [2024, 4, 12],
-    "info": {
-      "native": "동남아 및 남아메리카",
-      "light": "양지",
-      "temp": [18, 25],
-      "humidity": [40, 70],
-      "watering": [5, 7],
-      "repotting": ["2024-05-12"],
-      "fertilizer": "HIGH",
-      "desc": ["분갈이 다가오는 중"]
-    }
-  },
-  {
-    "id": 7,
+    "id": 4,
     "imgSrc": "/images/myriocladus.png",
     "name": "아스파라거스 미리오클라두스",
     "detailName": "Asparagus myriocladus",
@@ -134,6 +82,57 @@
       "repotting": ["2024-05-21"],
       "fertilizer": "MEDIUM",
       "desc": ["들여올 때 이미 분갈이 된 상태였음"]
+    }
+  },
+  {
+    "id": 5,
+    "imgSrc": "/images/tortum2.png",
+    "name": "필로덴드론 토텀 (중)",
+    "detailName": "Philodendron tortum",
+    "onDate": [2024, 6, 5],
+    "info": {
+      "native": "중남미 브라질",
+      "light": "반양지",
+      "temp": [18, 24],
+      "humidity": [40, 70],
+      "watering": [4, 10],
+      "repotting": ["2024-06-06"],
+      "fertilizer": "HIGH",
+      "desc": ["5-7일에 한번 물주기"]
+    }
+  },
+  {
+    "id": 6,
+    "imgSrc": "/images/billietiae.png",
+    "name": "필로덴드론 빌리에티에",
+    "detailName": "Philodendron billietiae",
+    "onDate": [2024, 6, 28],
+    "info": {
+      "native": "남아메리카",
+      "light": "반음지",
+      "temp": [18, 25],
+      "humidity": [50, 70],
+      "watering": [7, 10],
+      "repotting": ["2024-06-28"],
+      "fertilizer": "MEDIUM",
+      "desc": ["들여오는 날 분갈이 해줌"]
+    }
+  },
+  {
+    "id": 7,
+    "imgSrc": "/images/mini_rhipsalis.png",
+    "name": "미니 립살리스 카수타",
+    "detailName": "Rhipsalis baccifera",
+    "onDate": [2024, 2, 31],
+    "info": {
+      "native": "중남미 및 카리브해",
+      "light": "반양지",
+      "temp": [15, 25],
+      "humidity": [40, 70],
+      "watering": [7, 10],
+      "repotting": ["2024-04-05"],
+      "fertilizer": "HIGH",
+      "desc": ["큰 친구에서 떨어져나온 애들을 심었더니 새로 남"]
     }
   }
 ]
