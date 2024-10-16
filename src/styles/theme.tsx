@@ -16,6 +16,7 @@ const theme: Theme = {
     // font, basic color
     black: "#292929",
     deepGray: "#878787",
+    darkGray: "#545454",
     brown: "#7a5c3e",
     deepBrown: "#634a33",
 
@@ -59,7 +60,7 @@ const theme: Theme = {
     bgYellowGreen: "#f1fae8",
     bgGreen: "#fafffb",
     bgGray: "#ebebeb",
-    memoBgGray: "#EFEEEE",
+    memoBgGray: "#f5f5f5",
   },
 };
 

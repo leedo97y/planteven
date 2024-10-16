@@ -1,17 +1,30 @@
-import { DetailMainDiv, InfoSection } from "@/styles/DetailPageStyle";
+import { DetailMainDiv, InfoSection, TitleSection } from "@/styles/DetailPageStyle";
 import { PlantList } from "@/types";
 import Image from "next/image";
 import Memo from "./Memo";
+import DetailInfoContent from "./DetailInfoContent";
+import Link from "next/link";
+import { TbGridDots } from "react-icons/tb";
 
 const DetailMainInfo = (props: PlantList) => {
   return (
     <DetailMainDiv>
-      <div id="titleDiv">
-        <div id="plantNumber"># {props.id + 1}</div>
-        <h1>{props.name}</h1>
-        <p id="detailName">{props.detailName}</p>
+      <TitleSection>
+        <div id="plantTitleDiv">
+          <div id="nameDiv">
+            <div id="krName">
+              <h1>{props.name}</h1>
+              <span id="plantNumber">#{props.id + 1}</span>
+            </div>
+            <p id="detailName">{props.detailName}</p>
+          </div>
+          <Link href={"/"}>
+            <TbGridDots />
+            <span>home</span>
+          </Link>
+        </div>
         <Memo light={props.info?.light} native={props.info?.native} />
-      </div>
+      </TitleSection>
       <InfoSection>
         {props.imgSrc && (
           <div id="photoDiv">
@@ -26,58 +39,13 @@ const DetailMainInfo = (props: PlantList) => {
             />
           </div>
         )}
-        <div id="plantTextInfoDiv">
-          <div id="textDiv">
-            <p id="nativeTitle">자생지</p>
-            <p id="native">{props.info?.native}</p>
-          </div>
-          <div id="textDiv">
-            <p id="lightTitle">빛</p>
-            <p id="light">{props.info?.light}</p>
-          </div>
-          <div id="textDiv">
-            <p id="tempTitle">온도</p>
-            <p id="temp">
-              {props.info?.temp[0]} - {props.info?.temp[1]} ℃
-            </p>
-          </div>
-          <div id="textDiv">
-            <p id="humidityTitle">습도</p>
-            <p id="humidity">
-              {props.info?.humidity[0]} - {props.info?.humidity[1]} %
-            </p>
-          </div>
-          <div id="textDiv">
-            <p id="wateringTitle">물주기</p>
-            <p id="watering">
-              {props.info?.watering[0]} - {props.info?.watering[1]} 일
-            </p>
-          </div>
-          <div id="textDiv">
-            <p id="repottingTitle">분갈이</p>
-            <ul id="repotting">
-              {props.info?.repotting.map((item, index) =>
-                props.info?.repotting.length > 1 ? (
-                  <li key={index}>・ {item}</li>
-                ) : (
-                  <li key={index}>{item === "" ? "필요없음" : item}</li>
-                ),
-              )}
-            </ul>
-          </div>
-          <div id="textDiv">
-            <p id="descTitle">추가 사항</p>
-            <ul id="desc">
-              {props.info?.desc.map((item, index) =>
-                props.info?.desc.length > 1 ? (
-                  <li key={index}>・ {item}</li>
-                ) : (
-                  <li key={index}>{item}</li>
-                ),
-              )}
-            </ul>
-          </div>
-        </div>
+        <DetailInfoContent
+          temp={props.info?.temp}
+          humidity={props.info?.humidity}
+          watering={props.info?.watering}
+          repotting={props.info?.repotting}
+          desc={props.info?.desc}
+        />
       </InfoSection>
     </DetailMainDiv>
   );
