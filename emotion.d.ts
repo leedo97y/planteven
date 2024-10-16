@@ -17,6 +17,7 @@ declare module "@emotion/react" {
       // font, basic color
       black: string;
       deepGray: string;
+      darkGray: string;
       brown: string;
       deepBrown: string;
 
@@ -60,6 +61,7 @@ declare module "@emotion/react" {
       bgYellowGreen: string;
       bgGreen: string;
       bgGray: string;
+      memoBgGray: string;
     };
   }
 }

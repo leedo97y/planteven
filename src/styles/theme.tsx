@@ -16,6 +16,7 @@ const theme: Theme = {
     // font, basic color
     black: "#292929",
     deepGray: "#878787",
+    darkGray: "#545454",
     brown: "#7a5c3e",
     deepBrown: "#634a33",
 
@@ -52,13 +53,14 @@ const theme: Theme = {
     lightOrange: "#FFBE7E",
 
     // label color
-    labelLightGreen: "#d2fad6",
-    labelLightOrange: "#fae9c3",
+    labelLightGreen: "rgba(33, 110, 53, 0.5)",
+    labelLightOrange: "rgba(245, 154, 26, 0.5)",
 
     // background color
     bgYellowGreen: "#f1fae8",
     bgGreen: "#fafffb",
     bgGray: "#ebebeb",
+    memoBgGray: "#f5f5f5",
   },
 };
 

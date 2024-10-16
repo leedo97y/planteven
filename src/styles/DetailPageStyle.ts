@@ -18,40 +18,79 @@ export const DetailMainDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+`;
 
-  #titleDiv {
+export const TitleSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 13px;
+
+  #plantTitleDiv {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 13px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 
-    #plantNumber {
-      font-family: "Pretendard";
-      font-size: ${({ theme }) => theme.font.md};
+    #nameDiv {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      #krName {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 10px;
+
+        #plantNumber {
+          font-family: "Pretendard";
+          font-size: ${({ theme }) => theme.font.md};
+          color: ${({ theme }) => theme.colors.deepGray};
+        }
+
+        h1 {
+          margin: 0;
+          font-size: ${({ theme }) => theme.font.xlg};
+          font-weight: 600;
+        }
+      }
+
+      #detailName {
+        margin: 0;
+        font-size: ${({ theme }) => theme.font.xs};
+      }
     }
 
-    h1,
-    p {
-      margin: 0;
-    }
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 7px;
+      width: fit-content;
+      height: fit-content;
+      text-decoration: none;
+      padding: 5px;
+      color: ${({ theme }) => theme.colors.darkGray};
+      font-size: ${({ theme }) => theme.font.sm};
+      border: 1px solid ${({ theme }) => theme.colors.bgGray};
+      border-radius: 5px;
 
-    h1 {
-      font-size: ${({ theme }) => theme.font.xlg};
-    }
-
-    #detailName {
-      font-size: ${({ theme }) => theme.font.xs};
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 `;
 
-export const InfoSection = styled.div`
+export const InfoSection = styled.section`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 25px;
 
   #photoDiv {
     box-sizing: border-box;
@@ -63,48 +102,125 @@ export const InfoSection = styled.div`
     img {
       width: 100%;
       height: 100%;
-      border-radius: 3px;
+      border-radius: 5px;
     }
   }
 
   #plantTextInfoDiv {
-    box-sizing: border-box;
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 10px 0 0 0;
+    gap: 15px;
+  }
+`;
 
-    #textDiv {
-      box-sizing: border-box;
-      width: 100%;
+export const PlantBasicInfo = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid ${({ theme }) => theme.colors.bgGray};
+  border-radius: 5px;
+
+  #textDiv {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 20px;
+    border-right: 1px solid ${({ theme }) => theme.colors.bgGray};
+
+    &:last-of-type {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    #tempTitle,
+    #humidityTitle,
+    #wateringTitle {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: ${({ theme }) => theme.font.sm};
+      font-weight: 500;
+      font-size: ${({ theme }) => theme.font.xs};
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: ${({ theme }) => theme.font.xs};
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 3px;
+    }
+  }
+`;
 
-      p {
-        margin: 0;
-      }
+export const PlantExtraInfo = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-      p:first-of-type {
-        font-size: ${({ theme }) => theme.font.sm};
-        font-weight: 500;
-      }
+  #textDiv {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid ${({ theme }) => theme.colors.bgGray};
+    border-radius: 5px;
 
-      p:last-of-type {
-        font-size: ${({ theme }) => theme.font.xs};
-      }
+    /* #descTitle,
+    #repottingTitle {
+      padding-bottom: 10px;
+      border-bottom: 1px solid ${({ theme }) => theme.colors.bgGray};
+    } */
 
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        font-size: ${({ theme }) => theme.font.xs};
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-      }
+    &:first-of-type {
+      height: 25%;
+      justify-content: center;
+    }
+
+    &:last-of-type {
+      height: 75%;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p:first-of-type {
+      font-size: ${({ theme }) => theme.font.sm};
+      font-weight: 500;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: ${({ theme }) => theme.font.xs};
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      color: ${({ theme }) => theme.colors.darkGray};
     }
   }
 `;
