@@ -6,6 +6,11 @@ const style = css`
     src: url("/fonts/PretendardVariable.woff2") format("truetype");
   }
 
+  @font-face {
+    font-family: "GabiaHeuldot";
+    src: url("/fonts/GabiaHeuldot.ttf") format("truetype");
+  }
+
   html {
     width: 100vw;
     height: 100vh;
