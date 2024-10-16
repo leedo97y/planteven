@@ -60,6 +60,7 @@ declare module "@emotion/react" {
       bgYellowGreen: string;
       bgGreen: string;
       bgGray: string;
+      memoBgGray: string;
     };
   }
 }

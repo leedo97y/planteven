@@ -37,6 +37,7 @@ export const DetailMainDiv = styled.div`
 
     h1 {
       font-size: ${({ theme }) => theme.font.xlg};
+      font-weight: 600;
     }
 
     #detailName {
@@ -63,7 +64,7 @@ export const InfoSection = styled.div`
     img {
       width: 100%;
       height: 100%;
-      border-radius: 3px;
+      border-radius: 5px;
     }
   }
 

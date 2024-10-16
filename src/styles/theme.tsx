@@ -52,13 +52,14 @@ const theme: Theme = {
     lightOrange: "#FFBE7E",
 
     // label color
-    labelLightGreen: "#d2fad6",
-    labelLightOrange: "#fae9c3",
+    labelLightGreen: "rgba(33, 110, 53, 0.5)",
+    labelLightOrange: "rgba(245, 154, 26, 0.5)",
 
     // background color
     bgYellowGreen: "#f1fae8",
     bgGreen: "#fafffb",
     bgGray: "#ebebeb",
+    memoBgGray: "#EFEEEE",
   },
 };
 

@@ -1,28 +1,16 @@
-import { Gugi } from "next/font/google";
 import { DetailMainDiv, InfoSection } from "@/styles/DetailPageStyle";
 import { PlantList } from "@/types";
 import Image from "next/image";
-import Label from "./Label";
-
-const gugi = Gugi({
-  subsets: ["latin"],
-  weight: "400",
-});
+import Memo from "./Memo";
 
 const DetailMainInfo = (props: PlantList) => {
   return (
     <DetailMainDiv>
-      <div id="titleDiv" className={gugi.className}>
+      <div id="titleDiv">
         <div id="plantNumber"># {props.id + 1}</div>
         <h1>{props.name}</h1>
         <p id="detailName">{props.detailName}</p>
-        <Label
-          temp={props.info?.temp}
-          light={props.info?.light}
-          humidity={props.info?.humidity}
-          watering={props.info?.watering}
-          fertilizer={props.info?.fertilizer}
-        />
+        <Memo light={props.info?.light} native={props.info?.native} />
       </div>
       <InfoSection>
         {props.imgSrc && (
@@ -30,9 +18,8 @@ const DetailMainInfo = (props: PlantList) => {
             <Image
               src={props.imgSrc}
               alt="plant photo"
-              width={500}
-              height={500}
-              sizes="responsive"
+              width={300}
+              height={300}
               placeholder="blur"
               blurDataURL={props.imgSrc}
               priority
