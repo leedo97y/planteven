@@ -31,6 +31,7 @@ const theme: Theme = {
     deepYellowGreen: "#3C4200",
     mediumYellowGreen: "#60690F",
     yellowGreen: "#A7B04B",
+    grayYellowGreen: "#979d5e",
     mistYellowGreen: "#D2DB82",
 
     // water blue
