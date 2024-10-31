@@ -1,8 +1,11 @@
 import { HeaderContainer, HomeTitleSection, WorldMapSection } from "@/styles/HeaderStyle";
 import Link from "next/link";
 import { PiMapTrifold } from "react-icons/pi";
+import { HiMiniHome } from "react-icons/hi2";
 
 const Header = () => {
+  const pathname = window.location.pathname || "";
+
   return (
     <HeaderContainer>
       <HomeTitleSection>
@@ -13,9 +16,15 @@ const Header = () => {
         </Link>
       </HomeTitleSection>
       <WorldMapSection>
-        <Link href={"/world"} title="world map page">
-          <PiMapTrifold />
-        </Link>
+        {pathname === "/world" ? (
+          <Link href={"/"}>
+            <HiMiniHome />
+          </Link>
+        ) : (
+          <Link href={"/world"} title="world map page">
+            <PiMapTrifold />
+          </Link>
+        )}
       </WorldMapSection>
     </HeaderContainer>
   );
