@@ -1,10 +1,12 @@
+import { useRouter } from "next/router";
 import { HeaderContainer, HomeTitleSection, WorldMapSection } from "@/styles/HeaderStyle";
 import Link from "next/link";
 import { PiMapTrifold } from "react-icons/pi";
 import { HiMiniHome } from "react-icons/hi2";
 
 const Header = () => {
-  const pathname = window.location.pathname || "";
+  const router = useRouter();
+  const pathname = router.pathname;
 
   return (
     <HeaderContainer>
