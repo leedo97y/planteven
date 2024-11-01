@@ -25,6 +25,7 @@ const Main = () => {
                       alt="plant photo"
                       width={100}
                       height={100}
+                      priority
                       sizes="responsive"
                       placeholder="blur"
                       blurDataURL={item.imgSrc}
