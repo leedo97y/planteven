@@ -17,7 +17,7 @@ const Main = () => {
             const remainDays = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
 
             return (
-              <MainContentSection key={index}>
+              <MainContentSection key={index} title={item.name + " detail page"}>
                 <Link href={`/detail/${item.id}`}>
                   <div id="photoDiv">
                     <Image

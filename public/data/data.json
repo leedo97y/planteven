@@ -6,7 +6,7 @@
     "detailName": "Rhipsalis baccifera",
     "onDate": [2024, 2, 31],
     "info": {
-      "native": "중남미 및 카리브해",
+      "native": "Central African Rep.",
       "light": "반양지",
       "temp": [15, 25],
       "humidity": [40, 70],
@@ -23,7 +23,7 @@
     "detailName": "Chlorophytum Variegatum",
     "onDate": [2024, 3, 20],
     "info": {
-      "native": "남아프리카",
+      "native": "South Africa",
       "light": "반양지",
       "temp": [18, 25],
       "humidity": [40, 70],
@@ -40,7 +40,7 @@
     "detailName": "Philodendron hederaceum",
     "onDate": [2024, 3, 25],
     "info": {
-      "native": "중남미 브라질",
+      "native": "Mexico",
       "light": "반양지",
       "temp": [18, 25],
       "humidity": [40, 70],
@@ -57,7 +57,7 @@
     "detailName": "Philodendron tortum",
     "onDate": [2024, 4, 7],
     "info": {
-      "native": "중남미 브라질",
+      "native": "Brazil",
       "light": "반양지",
       "temp": [18, 24],
       "humidity": [40, 70],
@@ -74,7 +74,7 @@
     "detailName": "Asparagus myriocladus",
     "onDate": [2024, 4, 21],
     "info": {
-      "native": "동남아 및 남아메리카",
+      "native": "Jamaica",
       "light": "반음지",
       "temp": [18, 25],
       "humidity": [40, 70],
@@ -91,7 +91,7 @@
     "detailName": "Philodendron tortum",
     "onDate": [2024, 6, 5],
     "info": {
-      "native": "중남미 브라질",
+      "native": "Brazil",
       "light": "반양지",
       "temp": [18, 24],
       "humidity": [40, 70],
@@ -108,7 +108,7 @@
     "detailName": "Philodendron billietiae",
     "onDate": [2024, 6, 28],
     "info": {
-      "native": "남아메리카",
+      "native": "Guyana",
       "light": "반음지",
       "temp": [18, 25],
       "humidity": [50, 70],
@@ -125,7 +125,7 @@
     "detailName": "Rhipsalis baccifera",
     "onDate": [2024, 2, 31],
     "info": {
-      "native": "중남미 및 카리브해",
+      "native": "Central African Rep.",
       "light": "반양지",
       "temp": [15, 25],
       "humidity": [40, 70],

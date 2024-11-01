@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
 `;
 
-export const HomeTitle = styled.div`
+export const HomeTitleSection = styled.section`
   width: fit-content;
   height: fit-content;
   margin: 20px 0 10px 0;
@@ -34,6 +34,28 @@ export const HomeTitle = styled.div`
     span {
       font-size: ${({ theme }) => theme.font.md};
       color: ${({ theme }) => theme.colors.green};
+    }
+  }
+`;
+
+export const WorldMapSection = styled.section`
+  padding-right: 20px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    color: ${({ theme }) => theme.colors.deepGray};
+    padding: 5px;
+    border: 1px solid ${({ theme }) => theme.colors.bgGray};
+    border-radius: 5px;
+
+    svg {
+      width: 20px;
+      height: 20px;
     }
   }
 `;

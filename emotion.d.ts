@@ -32,6 +32,7 @@ declare module "@emotion/react" {
       deepYellowGreen: string;
       mediumYellowGreen: string;
       yellowGreen: string;
+      grayYellowGreen: string;
       mistYellowGreen: string;
 
       // water blue
