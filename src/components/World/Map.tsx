@@ -29,12 +29,10 @@ const Map = () => {
           "width: 100%; height: 100%; max-width: 100%; max-height: 100%; color: white;",
         );
 
-      const scaleValue = width >= 900 && height <= 900 ? width / 9 : width / 5.5;
-
       const projection = d3
         .geoNaturalEarth1()
-        .center([10, 5])
-        .scale(scaleValue)
+        .center([10, 0])
+        .scale(width / 5)
         .translate([width / 2, height / 2]);
 
       const geoGenerator = d3.geoPath().projection(projection);
@@ -45,8 +43,9 @@ const Map = () => {
 
         const mapData = plantlist.map((data) => data.info.native);
 
-        svg
-          .selectAll("path")
+        const g = svg.append("g");
+
+        g.selectAll("path")
           .data(countries.features)
           .enter()
           .append("path")
@@ -58,7 +57,7 @@ const Map = () => {
           .text((d: any) => d.properties.name);
 
         // 이미지, 라벨 group
-        svg
+        const labelGroup = g
           .selectAll(".country-group")
           .data(countries.features.filter((d: any) => mapData.includes(d.properties.name)))
           .enter()
@@ -67,39 +66,58 @@ const Map = () => {
           .attr("transform", (d: any) => {
             const coords = projection(d3.geoCentroid(d));
             return coords ? `translate(${coords[0]}, ${coords[1]})` : "translate(0, 0)";
-          })
-          .each((d: any, i: number, nodes: any) => {
-            const group = d3.select(nodes[i]);
-
-            // 이미지 추가
-            group
-              .append("image")
-              .attr("xlink:href", (d: any) =>
-                mapData.includes(d.properties.name)
-                  ? plantlist[mapData.indexOf(d.properties.name)].imgSrc
-                  : "/",
-              )
-              .attr("x", width <= 650 ? -10 : -15)
-              .attr("y", -20)
-              .attr(
-                "style",
-                width <= 650 ? "width: 20px; height: 20px;" : "width: 30px; height: 30px;",
-              )
-              .append("title")
-              .text((d: any) =>
-                mapData.includes(d.properties.name)
-                  ? plantlist[mapData.indexOf(d.properties.name)].detailName
-                  : "",
-              );
-
-            // 라벨 추가
-            group
-              .append("text")
-              .attr("dy", width <= 650 ? "1em" : "2em")
-              .attr("text-anchor", "middle")
-              .attr("style", "fill: #292929; font-size: 11px; font-weight: 600;")
-              .text(d.properties.name);
           });
+
+        labelGroup.each((d: any, i: number, nodes: any) => {
+          const group = d3.select(nodes[i]);
+
+          // 이미지 추가
+          group
+            .append("image")
+            .attr("xlink:href", (d: any) =>
+              mapData.includes(d.properties.name)
+                ? plantlist[mapData.indexOf(d.properties.name)].imgSrc
+                : "/",
+            )
+            .attr("x", width <= 650 ? -10 : -15)
+            .attr("y", -20)
+            .attr(
+              "style",
+              width <= 650 ? "width: 20px; height: 20px;" : "width: 30px; height: 30px;",
+            )
+            .append("title")
+            .text((d: any) =>
+              mapData.includes(d.properties.name)
+                ? plantlist[mapData.indexOf(d.properties.name)].detailName
+                : "",
+            );
+
+          // 라벨 추가
+          group
+            .append("text")
+            .attr("dy", width <= 650 ? "1em" : "2em")
+            .attr("text-anchor", "middle")
+            .attr("style", "fill: #292929; font-size: 11px; font-weight: 600;")
+            .text(d.properties.name);
+        });
+
+        // Zoom functionality
+        const zoom = d3
+          .zoom()
+          .scaleExtent([1, 8])
+          .on("zoom", (event: any) => {
+            g.attr("transform", event.transform);
+
+            // Adjust the size of labels and images based on zoom level
+            labelGroup.selectAll("text");
+
+            labelGroup
+              .selectAll("image")
+              .attr("width", event.transform.k)
+              .attr("height", event.transform.k);
+          });
+
+        svg.call(zoom);
       });
     };
 
