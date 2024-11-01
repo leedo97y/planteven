@@ -81,10 +81,8 @@ const Map = () => {
             )
             .attr("x", width <= 650 ? -10 : -15)
             .attr("y", -20)
-            .attr(
-              "style",
-              width <= 650 ? "width: 20px; height: 20px;" : "width: 30px; height: 30px;",
-            )
+            .attr("width", width <= 650 ? 20 : 30)
+            .attr("height", width <= 650 ? 20 : 30)
             .append("title")
             .text((d: any) =>
               mapData.includes(d.properties.name)
@@ -107,14 +105,6 @@ const Map = () => {
           .scaleExtent([1, 8])
           .on("zoom", (event: any) => {
             g.attr("transform", event.transform);
-
-            // Adjust the size of labels and images based on zoom level
-            labelGroup.selectAll("text");
-
-            labelGroup
-              .selectAll("image")
-              .attr("width", event.transform.k)
-              .attr("height", event.transform.k);
           });
 
         svg.call(zoom);

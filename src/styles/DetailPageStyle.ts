@@ -18,6 +18,12 @@ export const DetailMainDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 3000px) {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+  }
 `;
 
 export const TitleSection = styled.section`
@@ -96,7 +102,7 @@ export const InfoSection = styled.section`
     box-sizing: border-box;
     position: relative;
     display: block;
-    width: fit-content;
+    width: 100%;
     height: 100%;
 
     img {
@@ -107,7 +113,7 @@ export const InfoSection = styled.section`
   }
 
   #plantTextInfoDiv {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -187,12 +193,6 @@ export const PlantExtraInfo = styled.div`
     padding: 20px;
     border: 1px solid ${({ theme }) => theme.colors.bgGray};
     border-radius: 5px;
-
-    /* #descTitle,
-    #repottingTitle {
-      padding-bottom: 10px;
-      border-bottom: 1px solid ${({ theme }) => theme.colors.bgGray};
-    } */
 
     &:first-of-type {
       height: 25%;

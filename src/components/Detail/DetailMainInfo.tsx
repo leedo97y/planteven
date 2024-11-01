@@ -33,9 +33,9 @@ const DetailMainInfo = (props: PlantList) => {
               alt="plant photo"
               width={300}
               height={300}
+              priority
               placeholder="blur"
               blurDataURL={props.imgSrc}
-              priority
             />
           </div>
         )}
